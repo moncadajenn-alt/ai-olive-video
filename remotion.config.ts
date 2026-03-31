@@ -1,5 +1,4 @@
 import { Config } from "@remotion/cli/config";
 
-Config.setBrowserExecutable(
-  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
-);
+// Browser executable is set per-platform via CLI flag or auto-detected
+
