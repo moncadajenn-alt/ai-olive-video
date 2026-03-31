@@ -39,21 +39,21 @@ const Part1: React.FC = () => {
         return (
           <div key={i} style={{
             position: "absolute",
-            bottom: 380,
+            bottom: 718,
             left: "50%",
             transform: `translateX(calc(${x}px - 50%)) translateX(${nudge}px)`,
             transformOrigin: "bottom center",
           }}>
-            <svg width="90" height="148" viewBox="0 0 80 130">
+            <svg width="150" height="246" viewBox="0 0 80 130">
               <rect x="26" y="2" width="28" height="18" rx="5" fill={b.cap} />
               <rect x="28" y="4" width="8" height="12" rx="3" fill="rgba(255,255,255,0.35)" />
               <rect x="30" y="18" width="20" height="14" fill={b.color} />
               <rect x="8" y="30" width="64" height="85" rx="16" fill={b.color} />
               <rect x="12" y="34" width="10" height="70" rx="5" fill="rgba(255,255,255,0.28)" />
-              <rect x="14" y="44" width="52" height="55" rx="7" fill="white" opacity="0.92" />
-              <rect x="14" y="44" width="52" height="14" rx="7" fill={b.cap} opacity="0.88" />
-              <text x="40" y="54" textAnchor="middle" fontSize="9" fontWeight="900" fill="white">{b.label}</text>
-              <text x="40" y="70" textAnchor="middle" fontSize="7" fill="#636E72">Olive Oil</text>
+              <rect x="14" y="44" width="52" height="60" rx="7" fill="white" opacity="0.95" />
+              <rect x="14" y="44" width="52" height="18" rx="7" fill={b.cap} opacity="0.9" />
+              <text x="40" y="57" textAnchor="middle" fontSize="11" fontWeight="900" fill="white">{b.label}</text>
+              <text x="40" y="73" textAnchor="middle" fontSize="9" fill="#636E72">Olive Oil 500ml</text>
             </svg>
           </div>
         );
@@ -89,15 +89,17 @@ const Part2: React.FC = () => {
       <div style={{ position: "absolute", bottom: 360, left: 60, right: 60, height: 20, background: "linear-gradient(180deg,#C4975A,#9B7340)", borderRadius: 4, boxShadow: "0 5px 14px rgba(0,0,0,0.2)" }} />
 
       {/* 4 bottles lined up */}
-      <div style={{ position: "absolute", bottom: 380, left: 0, right: 0, display: "flex", justifyContent: "center", alignItems: "flex-end", gap: 36 }}>
+      <div style={{ position: "absolute", bottom: 718, left: 0, right: 0, display: "flex", justifyContent: "center", alignItems: "flex-end", gap: 20 }}>
         {[["#8FBC58","#4A7C2A","CLASSICO"],["#C8A830","#8B6914","PRIMAVERA"],["#5B9B5A","#2E5C2E","VERDE"],["#D4A818","#9A6E00","DORADO"]].map(([c,cp,l], i) => (
           <div key={i}>
-            <svg width="80" height="132" viewBox="0 0 80 130">
+            <svg width="150" height="246" viewBox="0 0 80 130">
               <rect x="26" y="2" width="28" height="18" rx="5" fill={cp} />
               <rect x="8" y="18" width="64" height="98" rx="16" fill={c} />
               <rect x="12" y="24" width="10" height="80" rx="5" fill="rgba(255,255,255,0.25)" />
-              <rect x="14" y="44" width="52" height="44" rx="7" fill="white" opacity="0.88" />
-              <text x="40" y="68" textAnchor="middle" fontSize="8" fill="#2D3436">{l}</text>
+              <rect x="14" y="44" width="52" height="55" rx="7" fill="white" opacity="0.92" />
+              <rect x="14" y="44" width="52" height="18" rx="7" fill={cp} opacity="0.9" />
+              <text x="40" y="57" textAnchor="middle" fontSize="11" fontWeight="900" fill="white">{l}</text>
+              <text x="40" y="73" textAnchor="middle" fontSize="9" fill="#636E72">Olive Oil</text>
             </svg>
           </div>
         ))}
@@ -143,17 +145,17 @@ const Part3: React.FC = () => {
     <AbsoluteFill style={{ background: "linear-gradient(160deg, #F5F0FF 0%, #E8DCFF 100%)" }}>
       {/* phone screen mock */}
       <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <div style={{ width: 320, height: 580, backgroundColor: "#1A1A2E", borderRadius: 40, padding: 16, boxShadow: "0 30px 80px rgba(0,0,0,0.4)" }}>
+        <div style={{ width: 600, height: 1000, backgroundColor: "#1A1A2E", borderRadius: 60, padding: 22, boxShadow: "0 40px 100px rgba(0,0,0,0.5)" }}>
           <div style={{ width: 70, height: 10, backgroundColor: "#0D0D1A", borderRadius: 5, margin: "0 auto 10px" }} />
           <div style={{ width: "100%", height: "calc(100% - 20px)", backgroundColor: "#F8F9FA", borderRadius: 28, overflow: "hidden", position: "relative" }}>
             {/* chat interface */}
             <div style={{ padding: "16px 12px", display: "flex", flexDirection: "column", gap: 10, height: "100%" }}>
               {/* header */}
               <div style={{ display: "flex", alignItems: "center", gap: 10, paddingBottom: 10, borderBottom: "1px solid #E9ECEF" }}>
-                <div style={{ width: 36, height: 36, borderRadius: "50%", backgroundColor: "#6C5CE7", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18 }}>🤖</div>
+                <div style={{ width: 56, height: 56, borderRadius: "50%", backgroundColor: "#6C5CE7", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 28 }}>🤖</div>
                 <div>
-                  <div style={{ fontFamily: "'Inter',sans-serif", fontWeight: 800, fontSize: 16, color: "#2D3436" }}>AI Assistant</div>
-                  <div style={{ fontFamily: "'Inter',sans-serif", fontSize: 11, color: "#00B894" }}>● Online</div>
+                  <div style={{ fontFamily: "'Inter',sans-serif", fontWeight: 900, fontSize: 26, color: "#2D3436" }}>AI Assistant</div>
+                  <div style={{ fontFamily: "'Inter',sans-serif", fontSize: 18, color: "#00B894" }}>● Online</div>
                 </div>
               </div>
               {/* spacer */}

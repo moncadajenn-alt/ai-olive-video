@@ -37,10 +37,10 @@ const PhoneCloseUp: React.FC<{ visible: boolean }> = ({ visible }) => {
     }}>
       <div style={{ position: "relative" }}>
         <div style={{
-          width: 320, height: 540,
+          width: 560, height: 900,
           backgroundColor: "#1A1A2E",
-          borderRadius: 40, padding: 16,
-          boxShadow: "0 30px 80px rgba(0,0,0,0.5)",
+          borderRadius: 56, padding: 20,
+          boxShadow: "0 40px 100px rgba(0,0,0,0.55)",
         }}>
           <div style={{ width: 70, height: 10, backgroundColor: "#0D0D1A", borderRadius: 5, margin: "0 auto 10px" }} />
           <div style={{
@@ -53,9 +53,9 @@ const PhoneCloseUp: React.FC<{ visible: boolean }> = ({ visible }) => {
           }}>
             <div style={{ position: "absolute", inset: 0, background: "linear-gradient(160deg, #E8F4FD, #D5E8F7)", borderRadius: 28 }} />
             <div style={{ position: "relative", textAlign: "center" }}>
-              <div style={{ fontSize: 72, marginBottom: 10 }}>🤖</div>
-              <div style={{ fontFamily: "'Inter',sans-serif", fontWeight: 700, fontSize: 22, color: "#2D3436" }}>AI Assistant</div>
-              <div style={{ fontFamily: "'Inter',sans-serif", fontSize: 15, color: "#636E72", marginTop: 6 }}>tap to open</div>
+              <div style={{ fontSize: 110, marginBottom: 16 }}>🤖</div>
+              <div style={{ fontFamily: "'Inter',sans-serif", fontWeight: 900, fontSize: 36, color: "#2D3436" }}>AI Assistant</div>
+              <div style={{ fontFamily: "'Inter',sans-serif", fontSize: 24, color: "#636E72", marginTop: 10 }}>tap to open</div>
             </div>
           </div>
         </div>

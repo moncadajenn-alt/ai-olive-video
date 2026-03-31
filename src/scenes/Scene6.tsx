@@ -53,20 +53,15 @@ export const Scene6: React.FC = () => {
     <AbsoluteFill style={{ background: "linear-gradient(160deg, #EEFFF8 0%, #D4FFE8 100%)" }}>
       <SupermarketBg zoom={zoom} brightness={0.9} />
 
-      {/* ── shelf ── */}
-      <div style={{ position: "absolute", bottom: 780, left: 0, right: 0, height: 20, background: "linear-gradient(180deg,#C4975A,#9B7340)", boxShadow: "0 5px 14px rgba(0,0,0,0.2)" }} />
-      <div style={{ position: "absolute", bottom: 758, left: 0, right: 0, height: 28, backgroundColor: "#FFD700", display: "flex", alignItems: "center", paddingLeft: 20 }}>
-        <span style={{ fontFamily: "'Inter',sans-serif", fontWeight: 700, fontSize: 13, color: "#5D4300" }}>🥇 BEST QUALITY — CLASSICO EXTRA VIRGIN</span>
-      </div>
-
-      {/* ── shelf back wall ── */}
-      <div style={{ position: "absolute", bottom: 790, left: 0, right: 0, height: 160, background: "linear-gradient(180deg,#EEE5D8,#E0D4C4)" }} />
+      {/* ── shelf plank only ── */}
+      <div style={{ position: "absolute", bottom: 698, left: 0, right: 0, height: 18, background: "linear-gradient(180deg,#C4975A,#9B7340)", boxShadow: "0 6px 18px rgba(0,0,0,0.3)" }} />
+      <div style={{ position: "absolute", bottom: 698, left: 0, right: 0, height: 260, background: "linear-gradient(180deg,#EEE5D8,#D8CCC0)" }} />
 
       {/* ── 3 non-chosen bottles (grayed out) ── */}
       <div style={{
-        position: "absolute", bottom: 800,
+        position: "absolute", bottom: 718,
         left: 0, right: 0,
-        display: "flex", justifyContent: "center", alignItems: "flex-end", gap: 80,
+        display: "flex", justifyContent: "center", alignItems: "flex-end", gap: 40,
       }}>
         {[
           { color: "#A8A8A8", cap: "#888", label: "PRIMAVERA" },
@@ -74,8 +69,8 @@ export const Scene6: React.FC = () => {
           { color: "#A8A8A8", cap: "#888", label: "VERDE" },
           { color: "#A8A8A8", cap: "#888", label: "DORADO" },
         ].map((b, i) => b ? (
-          <div key={i} style={{ opacity: 0.38, filter: "grayscale(0.8)" }}>
-            <svg width="72" height="118" viewBox="0 0 80 130">
+          <div key={i} style={{ opacity: 0.35, filter: "grayscale(0.8)" }}>
+            <svg width="120" height="196" viewBox="0 0 80 130">
               <rect x="26" y="2" width="28" height="16" rx="4" fill={b.cap} />
               <rect x="8" y="16" width="64" height="100" rx="16" fill={b.color} />
               <rect x="14" y="44" width="52" height="44" rx="6" fill="white" opacity="0.6" />
@@ -88,13 +83,13 @@ export const Scene6: React.FC = () => {
       {/* ── Winner bottle ── */}
       <div style={{
         position: "absolute",
-        bottom: 800 - bottleY,
+        bottom: 718 - bottleY,
         left: "50%",
-        transform: `translateX(calc(-50% - 120px)) scale(${bottleScale})`,
+        transform: `translateX(calc(-50% - 160px)) scale(${bottleScale})`,
         transformOrigin: "bottom center",
         zIndex: 10,
       }}>
-        <svg width="106" height="172" viewBox="0 0 80 130">
+        <svg width="160" height="260" viewBox="0 0 80 130">
           <rect x="26" y="2" width="28" height="18" rx="5" fill="#4A7C2A" />
           <rect x="28" y="4" width="8" height="12" rx="3" fill="rgba(255,255,255,0.4)" />
           <rect x="30" y="18" width="20" height="14" fill="#8FBC58" />
