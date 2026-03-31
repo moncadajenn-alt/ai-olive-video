@@ -1,0 +1,28 @@
+{
+  "name": "ai-olive-video",
+  "version": "1.0.0",
+  "description": "AI in Everyday Life - Olive Oil Example",
+  "scripts": {
+    "start": "npx remotion studio --browser-executable=\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\"",
+    "render": "npx remotion render AIVideo out/video.mp4 --browser-executable=\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\"",
+    "render:reels": "npx remotion render AIVideo out/reels.mp4 --codec h264 --crf 18 --pixel-format yuv420p --browser-executable=\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --log quiet",
+    "render:tiktok": "npx remotion render AIVideo out/tiktok.mp4 --codec h264 --crf 20 --pixel-format yuv420p --browser-executable=\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --log quiet",
+    "render:draft": "npx remotion render AIVideo out/draft.mp4 --codec h264 --crf 28 --scale 0.5 --browser-executable=\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\"",
+    "render:all": "npm run render:reels && npm run render:tiktok"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.441",
+    "@remotion/transitions": "4.0.441",
+    "remotion": "4.0.441",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.0",
+    "typescript": "5.8.3"
+  },
+  "remotion": {
+    "entryPoint": "src/index.ts"
+  }
+}
