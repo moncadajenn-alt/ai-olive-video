@@ -19,11 +19,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Fix binary permissions
+        run: chmod +x node_modules/.bin/remotion
+
       - name: Install Chrome
-        run: ./node_modules/.bin/remotion browser ensure
+        run: node_modules/.bin/remotion browser ensure
 
       - name: Render Reels (Instagram)
-        run: ./node_modules/.bin/remotion render AIVideo out/reels.mp4 --codec h264 --crf 18 --pixel-format yuv420p
+        run: node_modules/.bin/remotion render AIVideo out/reels.mp4 --codec h264 --crf 18 --pixel-format yuv420p
 
       - name: Upload video
         uses: actions/upload-artifact@v4
