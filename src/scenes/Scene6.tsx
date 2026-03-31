@@ -6,7 +6,6 @@
 import React from "react";
 import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { BichoCharacter } from "../components/BichoCharacter";
-import { AnimatedText } from "../components/AnimatedText";
 import { SupermarketBg } from "../components/SupermarketBg";
 
 export const SCENE6_DURATION = 150;
@@ -141,14 +140,35 @@ export const Scene6: React.FC = () => {
         <BichoCharacter expression={expression} scale={2.3} animate />
       </div>
 
-      {/* ── Text lines ── */}
-      <div style={{ position: "absolute", top: 110, left: 60, right: 60, display: "flex", flexDirection: "column", alignItems: "center", gap: 16 }}>
-        <div style={{ opacity: text1Opacity, backgroundColor: "rgba(255,255,255,0.92)", borderRadius: 18, padding: "14px 36px", boxShadow: "0 5px 20px rgba(0,0,0,0.1)" }}>
-          <AnimatedText text="great, this is the best quality" delay={0} fontSize={46} color="#2D3436" highlightWords={["best"]} highlightColor="#FDCB6E" />
-        </div>
-        <div style={{ opacity: text2Opacity, backgroundColor: "rgba(85,239,196,0.2)", border: "2px solid #55EFC4", borderRadius: 18, padding: "12px 32px" }}>
-          <AnimatedText text="i am going to buy this one" delay={0} fontSize={42} color="#00B894" highlightWords={["buy"]} highlightColor="#55EFC4" />
-        </div>
+      {/* ── Thought bubble 1 ── */}
+      <div style={{
+        position: "absolute", top: 80, left: 0, right: 0,
+        display: "flex", justifyContent: "center",
+        opacity: text1Opacity,
+      }}>
+        <div style={{
+          backgroundColor: "rgba(255,255,255,0.95)",
+          borderRadius: 22, padding: "14px 32px",
+          boxShadow: "0 6px 24px rgba(0,0,0,0.12)",
+          fontFamily: "'Inter',sans-serif", fontWeight: 800, fontSize: 36, color: "#2D3436",
+          whiteSpace: "nowrap",
+        }}>⭐ This is the best quality!</div>
+      </div>
+
+      {/* ── Thought bubble 2 ── */}
+      <div style={{
+        position: "absolute", top: 80, left: 0, right: 0,
+        display: "flex", justifyContent: "center",
+        opacity: text2Opacity,
+      }}>
+        <div style={{
+          backgroundColor: "rgba(85,239,196,0.15)",
+          border: "2.5px solid #55EFC4",
+          borderRadius: 22, padding: "14px 32px",
+          boxShadow: "0 6px 24px rgba(85,239,196,0.2)",
+          fontFamily: "'Inter',sans-serif", fontWeight: 800, fontSize: 36, color: "#00B894",
+          whiteSpace: "nowrap",
+        }}>🛒 I am buying this one!</div>
       </div>
     </AbsoluteFill>
   );

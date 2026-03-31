@@ -117,8 +117,6 @@ export const Scene3: React.FC = () => {
   const bichoX = interpolate(frame, [85, 110], [0, 600], { extrapolateRight: "clamp", extrapolateLeft: "clamp" });
   const bichoOpacity = interpolate(frame, [85, 108], [1, 0], { extrapolateRight: "clamp", extrapolateLeft: "clamp" });
 
-  const textOpacity = interpolate(frame, [105, 125], [0, 1], { extrapolateRight: "clamp" });
-
   const flashOpacity = interpolate(frame, [24, 28, 36], [0, 0.25, 0], { extrapolateRight: "clamp", extrapolateLeft: "clamp" });
 
   return (
@@ -202,23 +200,6 @@ export const Scene3: React.FC = () => {
       {/* ── Phone close-up ── */}
       <PhoneCloseUp visible={frame >= 90} />
 
-      {/* ── Text ── */}
-      <div style={{
-        position: "absolute",
-        top: 50, left: 60, right: 60,
-        display: "flex", justifyContent: "center",
-        opacity: textOpacity,
-      }}>
-        <div style={{
-          backgroundColor: "rgba(255,255,255,0.93)",
-          borderRadius: 22, padding: "12px 44px",
-          boxShadow: "0 6px 24px rgba(0,0,0,0.1)",
-          fontFamily: "'Inter',sans-serif", fontWeight: 900,
-          fontSize: 64, color: "#2D3436",
-        }}>
-          use AI 🤖
-        </div>
-      </div>
     </AbsoluteFill>
   );
 };

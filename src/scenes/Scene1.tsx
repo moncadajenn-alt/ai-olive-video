@@ -165,24 +165,6 @@ export const Scene1: React.FC = () => {
         <ThoughtBubble text="Which is more affordable?" emoji="💰" fadeIn={90} fadeOut={125} />
       </div>
 
-      {/* ── Top label ── */}
-      <div style={{
-        position: "absolute", top: 48,
-        left: 60, right: 60,
-        display: "flex", justifyContent: "center",
-      }}>
-        <div style={{
-          backgroundColor: "rgba(255,255,255,0.92)",
-          borderRadius: 22, padding: "12px 36px",
-          boxShadow: "0 6px 24px rgba(0,0,0,0.1)",
-          textAlign: "center",
-          fontFamily: "'Inter',sans-serif", fontWeight: 900,
-          fontSize: 52, color: "#2C3E50",
-          letterSpacing: "-1px",
-        }}>
-          too many choices? 🫒
-        </div>
-      </div>
     </AbsoluteFill>
   );
 };

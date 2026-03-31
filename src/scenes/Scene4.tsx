@@ -6,7 +6,6 @@
 import React from "react";
 import { AbsoluteFill, interpolate, Sequence, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { BichoCharacter } from "../components/BichoCharacter";
-import { AnimatedText } from "../components/AnimatedText";
 import { SupermarketBg } from "../components/SupermarketBg";
 
 export const SCENE4_DURATION = 240;
@@ -65,11 +64,6 @@ const Part1: React.FC = () => {
         <BichoCharacter expression="neutral" scale={1.8} animate />
       </div>
 
-      <div style={{ position: "absolute", top: 110, left: 60, right: 60, textAlign: "center" }}>
-        <div style={{ display: "inline-block", backgroundColor: "rgba(255,255,255,0.92)", borderRadius: 20, padding: "14px 36px", boxShadow: "0 5px 20px rgba(0,0,0,0.1)" }}>
-          <AnimatedText text="place bottles side by side" delay={0} fontSize={50} color="#2D3436" highlightWords={["side"]} highlightColor="#55EFC4" />
-        </div>
-      </div>
     </AbsoluteFill>
   );
 };
@@ -133,11 +127,6 @@ const Part2: React.FC = () => {
         <div style={{ position: "absolute", bottom: -3, right: -3, width: 20, height: 20, borderBottom: "4px solid white", borderRight: "4px solid white", borderRadius: "0 0 8px 0" }} />
       </div>
 
-      <div style={{ position: "absolute", top: 110, left: 60, right: 60, textAlign: "center" }}>
-        <div style={{ display: "inline-block", backgroundColor: "rgba(255,255,255,0.92)", borderRadius: 20, padding: "14px 36px", boxShadow: "0 5px 20px rgba(0,0,0,0.1)" }}>
-          <AnimatedText text="open your AI app" delay={0} fontSize={52} color="#2D3436" highlightWords={["AI"]} highlightColor="#A29BFE" />
-        </div>
-      </div>
     </AbsoluteFill>
   );
 };
@@ -218,11 +207,6 @@ const Part3: React.FC = () => {
         </div>
       </div>
 
-      <div style={{ position: "absolute", top: 100, left: 60, right: 60, textAlign: "center" }}>
-        <div style={{ display: "inline-block", backgroundColor: "rgba(255,255,255,0.93)", borderRadius: 20, padding: "14px 36px", boxShadow: "0 5px 20px rgba(0,0,0,0.1)" }}>
-          <AnimatedText text="use the camera" delay={0} fontSize={52} color="#2D3436" highlightWords={["camera"]} highlightColor="#74B9FF" />
-        </div>
-      </div>
     </AbsoluteFill>
   );
 };
@@ -326,11 +310,6 @@ const Part4: React.FC = () => {
         </div>
       </div>
 
-      <div style={{ position: "absolute", top: 100, left: 60, right: 60, textAlign: "center" }}>
-        <div style={{ display: "inline-block", backgroundColor: "rgba(255,255,255,0.15)", borderRadius: 20, padding: "14px 36px", backdropFilter: "blur(8px)" }}>
-          <AnimatedText text="take a photo" delay={0} fontSize={56} color="white" highlightWords={["photo"]} highlightColor="#FDCB6E" />
-        </div>
-      </div>
     </AbsoluteFill>
   );
 };

@@ -166,22 +166,6 @@ export const Scene2: React.FC = () => {
         </div>
       </div>
 
-      {/* ── Top label ── */}
-      <div style={{
-        position: "absolute", top: 48,
-        left: 60, right: 60,
-        display: "flex", justifyContent: "center",
-      }}>
-        <div style={{
-          backgroundColor: "rgba(255,255,255,0.93)",
-          borderRadius: 22, padding: "12px 36px",
-          boxShadow: "0 6px 24px rgba(0,0,0,0.1)",
-          fontFamily: "'Inter',sans-serif", fontWeight: 900,
-          fontSize: 52, color: "#2D3436",
-        }}>
-          which one is best? 😩
-        </div>
-      </div>
     </AbsoluteFill>
   );
 };
