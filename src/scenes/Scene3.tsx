@@ -129,10 +129,10 @@ export const Scene3: React.FC = () => {
         pointerEvents: "none",
       }} />
 
-      {/* ── Bicho – bigger, less bottom gap ── */}
+      {/* ── Bicho – vertically centered ── */}
       <div style={{
         position: "absolute",
-        bottom: 60,
+        bottom: 560,
         left: 0, right: 0,
         display: "flex", justifyContent: "center",
         transform: `translateX(${bichoX}px)`,
@@ -144,7 +144,7 @@ export const Scene3: React.FC = () => {
       {/* ── Idea bubble phase 1: "I have an idea!" ── */}
       <div style={{
         position: "absolute",
-        top: 380,
+        top: 300,
         left: "50%",
         transform: `translateX(-130%) scale(${bubble1Scale})`,
         transformOrigin: "bottom right",
@@ -172,7 +172,7 @@ export const Scene3: React.FC = () => {
       {/* ── Idea bubble phase 2: "Where is my phone?" ── */}
       <div style={{
         position: "absolute",
-        top: 340,
+        top: 260,
         left: "50%",
         transform: `translateX(-130%) scale(${bubble2Scale})`,
         transformOrigin: "bottom right",

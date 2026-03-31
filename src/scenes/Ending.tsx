@@ -71,7 +71,7 @@ export const Ending: React.FC = () => {
       {/* ── Bicho walking with bottle ── */}
       <div style={{
         position: "absolute",
-        bottom: 200,
+        bottom: 560,
         left: 0, right: 0,
         display: "flex", justifyContent: "center",
         transform: `translateX(${walkX}px) translateY(${walkBounce}px)`,

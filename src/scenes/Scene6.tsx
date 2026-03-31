@@ -54,17 +54,17 @@ export const Scene6: React.FC = () => {
       <SupermarketBg zoom={zoom} brightness={0.9} />
 
       {/* ── shelf ── */}
-      <div style={{ position: "absolute", bottom: 380, left: 0, right: 0, height: 20, background: "linear-gradient(180deg,#C4975A,#9B7340)", boxShadow: "0 5px 14px rgba(0,0,0,0.2)" }} />
-      <div style={{ position: "absolute", bottom: 360, left: 0, right: 0, height: 28, backgroundColor: "#FFD700", display: "flex", alignItems: "center", paddingLeft: 20 }}>
+      <div style={{ position: "absolute", bottom: 780, left: 0, right: 0, height: 20, background: "linear-gradient(180deg,#C4975A,#9B7340)", boxShadow: "0 5px 14px rgba(0,0,0,0.2)" }} />
+      <div style={{ position: "absolute", bottom: 758, left: 0, right: 0, height: 28, backgroundColor: "#FFD700", display: "flex", alignItems: "center", paddingLeft: 20 }}>
         <span style={{ fontFamily: "'Inter',sans-serif", fontWeight: 700, fontSize: 13, color: "#5D4300" }}>🥇 BEST QUALITY — CLASSICO EXTRA VIRGIN</span>
       </div>
 
       {/* ── shelf back wall ── */}
-      <div style={{ position: "absolute", bottom: 390, left: 0, right: 0, height: 160, background: "linear-gradient(180deg,#EEE5D8,#E0D4C4)" }} />
+      <div style={{ position: "absolute", bottom: 790, left: 0, right: 0, height: 160, background: "linear-gradient(180deg,#EEE5D8,#E0D4C4)" }} />
 
       {/* ── 3 non-chosen bottles (grayed out) ── */}
       <div style={{
-        position: "absolute", bottom: 400,
+        position: "absolute", bottom: 800,
         left: 0, right: 0,
         display: "flex", justifyContent: "center", alignItems: "flex-end", gap: 80,
       }}>
@@ -88,7 +88,7 @@ export const Scene6: React.FC = () => {
       {/* ── Winner bottle ── */}
       <div style={{
         position: "absolute",
-        bottom: 400 - bottleY,
+        bottom: 800 - bottleY,
         left: "50%",
         transform: `translateX(calc(-50% - 120px)) scale(${bottleScale})`,
         transformOrigin: "bottom center",
@@ -131,7 +131,7 @@ export const Scene6: React.FC = () => {
       {/* ── Bichon reaching / examining ── */}
       <div style={{
         position: "absolute",
-        bottom: 140,
+        bottom: 560,
         left: 0, right: 0,
         display: "flex", justifyContent: "center",
         transform: `translateX(${reachX}px) rotate(${nodAngle}deg)`,
@@ -142,7 +142,7 @@ export const Scene6: React.FC = () => {
 
       {/* ── Thought bubble 1 ── */}
       <div style={{
-        position: "absolute", top: 80, left: 0, right: 0,
+        position: "absolute", top: 300, left: 0, right: 0,
         display: "flex", justifyContent: "center",
         opacity: text1Opacity,
       }}>
@@ -157,7 +157,7 @@ export const Scene6: React.FC = () => {
 
       {/* ── Thought bubble 2 ── */}
       <div style={{
-        position: "absolute", top: 80, left: 0, right: 0,
+        position: "absolute", top: 300, left: 0, right: 0,
         display: "flex", justifyContent: "center",
         opacity: text2Opacity,
       }}>

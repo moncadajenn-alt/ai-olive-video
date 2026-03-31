@@ -54,14 +54,14 @@ export const Hook: React.FC = () => {
       <SupermarketBg panX={panX} zoom={zoom} />
 
       {/* ── Shelf plank ── */}
-      <div style={{ position: "absolute", bottom: 378, left: 0, right: 0, height: 20, background: "linear-gradient(180deg,#C4975A,#9B7340)", boxShadow: "0 5px 14px rgba(0,0,0,0.2)" }} />
-      <div style={{ position: "absolute", bottom: 356, left: 0, right: 0, height: 26, backgroundColor: "#FFD700", display: "flex", alignItems: "center", paddingLeft: 20 }}>
-        <span style={{ fontFamily: "'Inter',sans-serif", fontWeight: 700, fontSize: 14, color: "#5D4300" }}>🫒 OLIVE OIL SELECTION</span>
+      <div style={{ position: "absolute", bottom: 760, left: 0, right: 0, height: 22, background: "linear-gradient(180deg,#C4975A,#9B7340)", boxShadow: "0 5px 14px rgba(0,0,0,0.2)" }} />
+      <div style={{ position: "absolute", bottom: 736, left: 0, right: 0, height: 28, backgroundColor: "#FFD700", display: "flex", alignItems: "center", paddingLeft: 20 }}>
+        <span style={{ fontFamily: "'Inter',sans-serif", fontWeight: 700, fontSize: 15, color: "#5D4300" }}>🫒 OLIVE OIL SELECTION</span>
       </div>
 
       {/* ── 4 featured bottles ── */}
       <div style={{
-        position: "absolute", bottom: 400,
+        position: "absolute", bottom: 784,
         left: 0, right: 0,
         display: "flex", justifyContent: "center", alignItems: "flex-end", gap: 20,
       }}>
@@ -71,10 +71,10 @@ export const Hook: React.FC = () => {
         <OliveBottle color="#D4A818" capColor="#9A6E00" label="DORADO"    price="$11.99" delay={104} wobble={4.5} />
       </div>
 
-      {/* ── Bichon – close to bottles ── */}
+      {/* ── Bichon – centered vertically ── */}
       <div style={{
         position: "absolute",
-        bottom: 120,
+        bottom: 560,
         left: 0, right: 0,
         display: "flex", justifyContent: "center",
         transform: `translateX(${bichoX}px)`,

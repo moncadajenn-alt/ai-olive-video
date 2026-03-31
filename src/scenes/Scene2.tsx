@@ -73,12 +73,12 @@ export const Scene2: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: "linear-gradient(160deg, #EEF4FF 0%, #D8E8FF 100%)", overflow: "hidden" }}>
 
-      {/* ── Subtle shelf background ── */}
-      <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 320, background: "linear-gradient(0deg, #E8DDD0 0%, transparent 100%)" }} />
-      <div style={{ position: "absolute", bottom: 310, left: 0, right: 0, height: 16, background: "linear-gradient(180deg, #C4975A, #9B7340)", boxShadow: "0 4px 12px rgba(0,0,0,0.2)" }} />
+      {/* ── Shelf background ── */}
+      <div style={{ position: "absolute", bottom: 750, left: 0, right: 0, height: 200, background: "linear-gradient(0deg, #E8DDD0 0%, transparent 100%)" }} />
+      <div style={{ position: "absolute", bottom: 760, left: 0, right: 0, height: 16, background: "linear-gradient(180deg, #C4975A, #9B7340)", boxShadow: "0 4px 12px rgba(0,0,0,0.2)" }} />
 
       {/* ── Zoom wrapper ── */}
-      <div style={{ position: "absolute", inset: 0, transform: `scale(${zoom})`, transformOrigin: "center 60%" }}>
+      <div style={{ position: "absolute", inset: 0, transform: `scale(${zoom})`, transformOrigin: "center 55%" }}>
 
         {/* Spinning confused labels */}
         {showLabels && (
@@ -92,10 +92,10 @@ export const Scene2: React.FC = () => {
           </>
         )}
 
-        {/* ── Bottles close-up ── */}
+        {/* ── Bottles – mid screen ── */}
         <div style={{
           position: "absolute",
-          bottom: 300,
+          bottom: 760,
           left: 0, right: 0,
           display: "flex", justifyContent: "center", alignItems: "flex-end", gap: 20,
         }}>
@@ -128,10 +128,10 @@ export const Scene2: React.FC = () => {
           })}
         </div>
 
-        {/* ── Bichon – bigger, less bottom gap ── */}
+        {/* ── Bichon – vertically centered ── */}
         <div style={{
           position: "absolute",
-          bottom: 60,
+          bottom: 540,
           left: 0, right: 0,
           display: "flex", justifyContent: "center",
           transform: `translateY(${sighY}px)`,
@@ -140,10 +140,10 @@ export const Scene2: React.FC = () => {
         </div>
       </div>
 
-      {/* ── Thought bubble ── */}
+      {/* ── Thought bubble – safe zone ── */}
       <div style={{
         position: "absolute",
-        bottom: 560,
+        bottom: 1200,
         left: 0, right: 0,
         display: "flex", justifyContent: "center",
         opacity: thoughtOpacity,

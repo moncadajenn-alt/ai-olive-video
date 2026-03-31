@@ -102,15 +102,14 @@ export const Scene1: React.FC = () => {
       {/* ── shelf back wall ── */}
       <div style={{
         position: "absolute",
-        top: 660, left: 40, right: 40, height: 180,
+        bottom: 780, left: 0, right: 0, height: 200,
         background: "linear-gradient(180deg,#EEE5D8,#E0D4C4)",
-        borderRadius: 6,
       }} />
 
-      {/* ── Bottles ── */}
+      {/* ── Bottles – mid screen ── */}
       <div style={{
         position: "absolute",
-        bottom: 390,
+        bottom: 800,
         left: 0, right: 0,
         display: "flex", justifyContent: "center", alignItems: "flex-end", gap: 30,
       }}>
@@ -121,15 +120,15 @@ export const Scene1: React.FC = () => {
       </div>
 
       {/* ── shelf plank ── */}
-      <div style={{ position: "absolute", bottom: 382, left: 40, right: 40, height: 22, background: "linear-gradient(180deg,#C4975A,#9B7340)", borderRadius: 4, boxShadow: "0 6px 16px rgba(0,0,0,0.25)" }} />
-      <div style={{ position: "absolute", bottom: 358, left: 40, right: 40, height: 26, backgroundColor: "#FFD700", display: "flex", alignItems: "center", paddingLeft: 16 }}>
+      <div style={{ position: "absolute", bottom: 792, left: 0, right: 0, height: 22, background: "linear-gradient(180deg,#C4975A,#9B7340)", boxShadow: "0 6px 16px rgba(0,0,0,0.25)" }} />
+      <div style={{ position: "absolute", bottom: 768, left: 0, right: 0, height: 26, backgroundColor: "#FFD700", display: "flex", alignItems: "center", paddingLeft: 16 }}>
         <span style={{ fontFamily: "'Inter',sans-serif", fontWeight: 700, fontSize: 14, color: "#5D4300" }}>🫒 OLIVE OIL SELECTION</span>
       </div>
 
-      {/* ── Bichon dog – bigger and closer ── */}
+      {/* ── Bichon dog – vertically centered ── */}
       <div style={{
         position: "absolute",
-        bottom: 60,
+        bottom: 560,
         left: 0, right: 0,
         display: "flex", justifyContent: "center",
         transform: `translateY(${shoulderDrop}px)`,
@@ -139,10 +138,10 @@ export const Scene1: React.FC = () => {
         </div>
       </div>
 
-      {/* ── Thought bubbles (sequential monologue) ── */}
+      {/* ── Thought bubbles – safe zone above dog ── */}
       <div style={{
         position: "absolute",
-        bottom: 520,
+        bottom: 1230,
         left: 0, right: 0,
         display: "flex", justifyContent: "center",
       }}>
@@ -150,7 +149,7 @@ export const Scene1: React.FC = () => {
       </div>
       <div style={{
         position: "absolute",
-        bottom: 520,
+        bottom: 1230,
         left: 0, right: 0,
         display: "flex", justifyContent: "center",
       }}>
@@ -158,7 +157,7 @@ export const Scene1: React.FC = () => {
       </div>
       <div style={{
         position: "absolute",
-        bottom: 520,
+        bottom: 1230,
         left: 0, right: 0,
         display: "flex", justifyContent: "center",
       }}>
