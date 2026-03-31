@@ -20,10 +20,10 @@ jobs:
         run: npm install
 
       - name: Install Chrome
-        run: npx remotion browser ensure
+        run: ./node_modules/.bin/remotion browser ensure
 
       - name: Render Reels (Instagram)
-        run: npx remotion render AIVideo out/reels.mp4 --codec h264 --crf 18 --pixel-format yuv420p
+        run: ./node_modules/.bin/remotion render AIVideo out/reels.mp4 --codec h264 --crf 18 --pixel-format yuv420p
 
       - name: Upload video
         uses: actions/upload-artifact@v4
